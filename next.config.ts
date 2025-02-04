@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  reactStrictMode: true,
+  images: {
+    domains: ["placeholder.com"], // Add any domains you'll be loading images from
+  },
+  env: {
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
+    EMAIL_TO: process.env.EMAIL_TO,
+  },
+}
 
-export default nextConfig;
+export default nextConfig
+
