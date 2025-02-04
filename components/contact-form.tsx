@@ -25,7 +25,7 @@ export default function ContactForm() {
         const form = document.querySelector("form") as HTMLFormElement
         form.reset()
       }
-    } catch (error) {
+    } catch (_) {
       toast({
         title: "Error",
         description: "An unexpected error occurred. Please try again.",
